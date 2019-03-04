@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>HelloServlet</display-name>
+  <servlet>
+  	<servlet-name>HelloServlet</servlet-name>
+  	<servlet-class>con.ynet.test.HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>HelloServlet</servlet-name>
+  	<url-pattern>/HelloServlet/Hello</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>Refresh</servlet-name>
+  	<servlet-class>con.ynet.test.Refresh</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Refresh</servlet-name>
+  	<url-pattern>/HelloServlet/Refresh</url-pattern>
+  </servlet-mapping>
+   
+  <servlet>
+  	<servlet-name>ListFileServlet</servlet-name>
+  	<servlet-class>con.ynet.test.ListFileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ListFileServlet</servlet-name>
+  	<url-pattern>/HelloServlet/ListFileServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>ListFilesServlet</servlet-name>
+  	<servlet-class>con.ynet.test.ListFilesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ListFilesServlet</servlet-name>
+  	<url-pattern>/HelloServlet/ListFilesServlet</url-pattern>
+  </servlet-mapping>
+  
+  <filter>
+  	<filter-name>SiteHitCounter</filter-name>
+  	<filter-class>com.ynet.test.SiteHitCounter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>SiteHitCounter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
